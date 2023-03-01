@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #000000, #06351e);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    background-image: url(https://content.paodeacucar.com/wp-content/uploads/2019/06/mora-sozinho2.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.582);
+    background-blend-mode: darken;
+
+    box-shadow: 1px 1px 5px black;
+}
+
+
+.inputs{
+    width: 60%;
+    align-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    margin-top: 10%;
+    font-weight: bold;
+    margin-bottom: 10%;
+    font-weight: 750;
+    font-size: 2rem;
+}
+
+input{
+    margin-bottom: 3%;
+    text-align: center;
+    height: 40px;
+    width: 60%;
+    border: 0;
+    border-radius: 3px;
+    display: block;
+}
+
+img{
+    width: 45px;
+}
+
+a{
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+p{
+    font-size: 1.15rem;
+    margin-bottom: auto;
+}
+
+.cad{
+    color: #37ad66;
+}
+
+.cad:hover{
+    text-decoration: underline;
+}
+
+#log{
+    background-color: #37ad66;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#log:hover{
+    background-color: white;
+    color: #37ad66;
+}
+
+.account{
+    margin-top: auto;
+    padding-bottom: 40px;
+}
+
+.account a{
+    margin-right: 3%;
+    margin-top: auto;
+}
+
+.text{
+    margin-top: 15%;
+    width: 25%;
+}
+
+h2{
+    font-weight:bold;
+    font-size: 2.2rem;
+    margin-bottom: 5%;
+}
+
+span{
+    color: #37ad66;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    margin: 0px 0px 5px 5px;
+}
+
+footer img{
+    width: 35px;
+}
+
+footer a{
+    font-size: 1.1rem;
+    margin-right: 10px;
+    color: black;
+}
+
+footer a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:400px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    main{
+        background-image: url(https://img.freepik.com/fotos-premium/arquiteto-masculino-no-escritorio-trabalhando-na-mesa-fazendo-compras-on-line-usando-cartao-de-credito-no-celular_625516-2389.jpg?w=360);
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p{
+        font-size: 0.9rem;
+    }
+
+    a{
+        font-size: 0.9rem;
+    }
+
+    h1{
+        margin-bottom: 70px;
+    }
+
+    img{
+        width: 40px;
+    }
+
+    .inputs{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    input{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .account{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .account img{
+        margin: 0px 10px 0px 10px;
+    }
+    
+    h2{
+        font-weight: normal;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    footer{
+        visibility: hidden;
+        left: 50%;
+        width: 70%;
+        transform: translate(-50%);
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    footer img{
+        width: 20px;
+    }
+
+    footer a{
+        font-size: 1rem;
+    }
+}
