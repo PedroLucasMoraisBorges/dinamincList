@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="inicial.css">
+    <title>Lista Dinâmica</title>
+</head>
+<body>
+    <header>
+        <h1>SHOP-LIST</h1>
+        <a href="#"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc2IDE0OC42OGMtMTI1LjM0IDAtMjI3LjMyIDEwMS45OC0yMjcuMzIgMjI3LjMyIDAgNjcuMTY0IDI5LjMwNSAxMjcuNiA3NS43NzMgMTY5LjI1djAuMTYwMTZsMy4yOTY5IDIuODM5OGMwLjU3ODEyIDAuNTAzOTEgMS4yMTA5IDAuOTE3OTcgMS44MDA4IDEuNDEwMiA0LjA4MiAzLjQ0OTIgOC4yODkxIDYuNzUzOSAxMi42MDUgOS45MTggMS4xNjQxIDAuODUxNTYgMi4zMjgxIDEuNjc1OCAzLjUxNTYgMi41IDQuNTg1OSAzLjIxODggOS4yNzM0IDYuMjg5MSAxNC4wODYgOS4xNjggMC44MDQ2OSAwLjQ4NDM4IDEuNjI4OSAwLjkzNzUgMi40MzM2IDEuNDAyMyA1LjI3NzMgMy4wNzAzIDEwLjY2NCA1Ljk1NyAxNi4xOTUgOC42MDE2IDAuMDU4NTk0IDAuMDI3MzQ0IDAuMTEzMjggMC4wNDY4NzUgMC4xNzE4OCAwLjA3NDIxOSAxMS44MjggNS42MzY3IDI0LjIzOCAxMC4yNSAzNy4wODIgMTMuNzg5IDAuMjM4MjggMC4wNjY0MDcgMC40NzI2NiAwLjE0MDYyIDAuNzEwOTQgMC4xOTkyMiA2LjA3MDMgMS42NTYyIDEyLjI0NiAzLjA1MDggMTguNTA4IDQuMTk1MyAwLjU4NTk0IDAuMTA1NDcgMS4xNjQxIDAuMjA3MDMgMS43NTM5IDAuMzEyNSA2LjA0MyAxLjA2MjUgMTIuMTYgMS45MDIzIDE4LjM2NyAyLjQ4MDUgMC43MTA5NCAwLjA2NjQwNyAxLjQyMTkgMC4xMDU0NyAyLjEyMTEgMC4xNjAxNiA2LjIzMDUgMC41MjczNCAxMi41MjMgMC44NTkzNyAxOC44OTUgMC44NTkzNyA2LjM3NSAwIDEyLjY2NC0wLjMzMjAzIDE4LjkwNi0wLjg1MTU2IDAuNzEwOTQtMC4wNTg1OTQgMS40MjE5LTAuMDkzNzUgMi4xMjExLTAuMTYwMTYgNi4yMDMxLTAuNTY2NDEgMTIuMzI0LTEuNDIxOSAxOC4zNjctMi40ODA1IDAuNTg1OTQtMC4xMDU0NyAxLjE2NDEtMC4yMDcwMyAxLjc1MzktMC4zMTI1IDYuMjYxNy0xLjE0NDUgMTIuNDM4LTIuNTM5MSAxOC41MDgtNC4xOTUzIDAuMjM4MjgtMC4wNjY0MDYgMC40NzI2Ni0wLjEzMjgxIDAuNzEwOTQtMC4xOTkyMiAxMi44NDQtMy41NDMgMjUuMjUtOC4xNTYyIDM3LjA4Mi0xMy43ODkgMC4wNTg1OTMtMC4wMjczNDMgMC4xMTMyOC0wLjA0Njg3NSAwLjE3MTg4LTAuMDc0MjE5IDUuNTMxMi0yLjY0NDUgMTAuOTIyLTUuNTM5MSAxNi4xOTUtOC42MDE2IDAuODE2NDEtMC40NzI2NiAxLjYyODktMC45MTc5NyAyLjQzMzYtMS40MDIzIDQuODIwMy0yLjg3ODkgOS41MDc4LTUuOTU3IDE0LjA4Ni05LjE2OCAxLjE3NTgtMC44MjQyMiAyLjM0NzctMS42NDg0IDMuNTE1Ni0yLjUgNC4zMjAzLTMuMTY0MSA4LjUyMzQtNi40Njg4IDEyLjYwNS05LjkxOCAwLjU4NTk0LTAuNDkyMTkgMS4yMjI3LTAuOTEwMTYgMS44MDA4LTEuNDEwMmwzLjI5NjktMi44Mzk4di0wLjE2MDE2YzQ2LjQ2OS00MS42NTYgNzUuNzczLTEwMi4wOSA3NS43NzMtMTY5LjI1LTAuMDA3ODEzLTEyNS4zNC0xMDEuOTktMjI3LjMyLTIyNy4zMy0yMjcuMzJ6bTAgMjI3LjMyYy00MS43ODEgMC03NS43NzMtMzMuOTkyLTc1Ljc3My03NS43NzNzMzMuOTkyLTc1Ljc3MyA3NS43NzMtNzUuNzczIDc1Ljc3MyAzMy45OTIgNzUuNzczIDc1Ljc3My0zMy45OTIgNzUuNzczLTc1Ljc3MyA3NS43NzN6bTI4LjQxOCAxOC45NDVjNTcuNDQ1IDAgMTA0LjE5IDQ2Ljc0MiAxMDQuMTkgMTA0LjE5djM3LjQ4OGMtMC4zOTg0NCAwLjMzMjAzLTAuODE2NDEgMC42MzI4MS0xLjIxMDkgMC45NjQ4NC0zLjc0MjIgMy4wMzkxLTcuNTc4MSA1LjkyOTctMTEuNSA4LjY5NTMtMC44NzEwOSAwLjYxNzE5LTEuNzIyNyAxLjI1LTIuNTkzOCAxLjg0NzctNC4yMzQ0IDIuODkwNi04LjU4MiA1LjU5NzctMTMuMDA0IDguMTY0MS0wLjgwNDY5IDAuNDcyNjYtMS42MjExIDAuOTM3NS0yLjQzMzYgMS40MDIzLTQuNjQwNiAyLjYwNTUtOS4zNjcyIDUuMDQ2OS0xNC4xODggNy4yODUyLTAuNTAzOTEgMC4yMzgyOC0xLjAxMTcgMC40NjQ4NC0xLjUyMzQgMC42OTE0MS0xNS43MyA3LjE1MjMtMzIuMzA5IDEyLjMzMi00OS4zNjcgMTUuNDAyLTAuNTM5MDYgMC4wOTM3NS0xLjA3ODEgMC4xOTkyMi0xLjYyMTEgMC4yOTI5Ny01LjM3MTEgMC45MTc5Ny0xMC43ODkgMS42Mjg5LTE2LjI0MiAyLjEzMjgtMC43NSAwLjA2NjQwNi0xLjUwNzggMC4xMTMyOC0yLjI2NTYgMC4xNzE4OC01LjUyNzMgMC40MjE4OC0xMS4wNzQgMC43MDcwMy0xNi42NTYgMC43MDcwMy01LjU3ODEgMC0xMS4xMjktMC4yODUxNi0xNi42NTItMC43MzA0Ny0wLjc1LTAuMDU4NTk0LTEuNTA3OC0wLjEwNTQ3LTIuMjY1Ni0wLjE3MTg4LTUuNDU3LTAuNTAzOTEtMTAuODc1LTEuMjAzMS0xNi4yNDItMi4xMzI4LTAuNTM5MDYtMC4wOTM3NS0xLjA3ODEtMC4xODc1LTEuNjIxMS0wLjI5Mjk3LTE3LjA1OS0zLjA3MDMtMzMuNjMzLTguMjUtNDkuMzY3LTE1LjQwMi0wLjUxMTcyLTAuMjM4MjgtMS4wMjM0LTAuNDUzMTMtMS41MjM0LTAuNjkxNDEtNC44MjAzLTIuMjM0NC05LjU0NjktNC42Nzk3LTE0LjE4OC03LjI4NTItMC44MTY0MS0wLjQ2NDg0LTEuNjIxMS0wLjkyOTY5LTIuNDMzNi0xLjQwMjMtNC40MjE5LTIuNTU4Ni04Ljc2OTUtNS4yNzczLTEzLjAwNC04LjE2NDEtMC44ODI4MS0wLjU5NzY2LTEuNzM0NC0xLjIzMDUtMi41OTM4LTEuODQ3Ny0zLjkyMTktMi43NjU2LTcuNzU3OC01LjY0NDUtMTEuNS04LjY5NTMtMC4zOTg0NC0wLjMyMDMxLTAuODE2NDEtMC42MzI4MS0xLjIxMDktMC45NjQ4NHYtMzcuNDY1YzAtNTcuNDQ1IDQ2Ljc0Mi0xMDQuMTkgMTA0LjE5LTEwNC4xOXptMTIzLjEzIDEyMy44NXYtMTkuNjY0YzAtNTkuMzk4LTQyLjI4MS0xMDkuMTEtOTguMzE2LTEyMC42MiAyNS4wMTYtMTcuMDU5IDQxLjQ4OC00NS43ODUgNDEuNDg4LTc4LjI4NSAwLTUyLjIyNy00Mi40ODgtOTQuNzE1LTk0LjcxNS05NC43MTUtNTIuMjI3IDAtOTQuNzE1IDQyLjQ4OC05NC43MTUgOTQuNzE1IDAgMzIuNDk2IDE2LjQ3MyA2MS4yMjMgNDEuNDg0IDc4LjI4MS01Ni4wMzUgMTEuNTItOTguMzE2IDYxLjIyNy05OC4zMTYgMTIwLjYydjE5LjY2NGMtMzUuMTk5LTM3LjMyOC01Ni44MzItODcuNTY2LTU2LjgzMi0xNDIuOCAwLTExNC45IDkzLjQ3Ny0yMDguMzggMjA4LjM4LTIwOC4zOHMyMDguMzggOTMuNDc3IDIwOC4zOCAyMDguMzhjMC4wMDM5MDYgNTUuMjMtMjEuNjMzIDEwNS40Ny01Ni44MjggMTQyLjh6IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=" alt="Perfil"></a>
+    </header>
+
+    <main>
+        <section class="selection">
+
+            <input type="text" placeholder="Categoria" id="category" list="faixa">
+            <datalist id="faixa">
+                <option value="Verduras"></option>
+                <option value="Limpeza"></option>
+                <option value="Frutas"></option>
+                <option value="Cozinha"></option>
+                <option value="Diversos"></option>
+            </datalist>
+
+            <input type="text" name="product" id="product" placeholder="Produto">
+
+            <input type="text" name="amount" id="amount" placeholder="Quantidade">
+
+            <input type="image" src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Símbolo de mais" id="submit" onclick="submit()">
+
+        </section>
+
+        <section class="conteiner">
+            <div class="start">
+                <h2>Lista de compras</h2>
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/0/532.png" alt="Download">
+                </a>
+                <ul id="list"></ul>
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var list_category = []
+        var list_limpeza = []
+        var list_frutas = []
+        var list_verduras = []
+        var list_diversos = []
+        var list_cozinha = []
+
+
+        function submit(){
+            var category = document.getElementById('category')
+            var product = document.getElementById('product')
+            var quant = document.getElementById('amount')
+
+            var analise = category.innerText.toUpperCase()
+            console.log(analise)
+
+
+            var encontrado = false
+
+            var text = `${quant.value} - ${product.value}`
+            n1 = parseInt(quant.value)
+
+
+
+            if(category.value == "" || product.value == "" || quant.value == ""){
+                return
+            }
+
+            for(var teste_category of list_category){
+                if(teste_category == category.value){
+                    encontrado=true
+                }
+            }
+
+            if(encontrado == false){
+                list_category.push(category.value)
+
+                document.getElementById('list').innerHTML += '<div class = "sub"><h3>'+category.value+'</h3></div>'
+                document.getElementById('list').innerHTML += '<div class="print">'+text+'</div>'
+            }
+
+            else{
+                document.getElementById('list').innerHTML += '<div class="print">'+text+'</div>'
+            }
+
+
+
+
+            category.value=""
+            product.value=""
+            quant.value=""
+            
+        }
+    </script>
+</body>
+</html>
