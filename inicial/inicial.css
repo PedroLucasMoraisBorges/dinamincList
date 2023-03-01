@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    max-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #37ad66;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+h1{
+    margin-left: 20px;
+    font-weight: 900;
+}
+
+h3{
+    background-color: #E8D4B5;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+header img{
+    margin-right: 20px;
+    width: 80px;
+}
+
+main{
+    background-image: url(https://img.freepik.com/fotos-gratis/mulher-com-smartphone-em-um-supermercado-em-pe-perto-das-prateleiras-cheias-de-frutas-na-mercearia-segurando-o-polegar-para-cima_342744-1091.jpg?w=1060&t=st=1667320108~exp=1667320708~hmac=3c30c23053bf8630841f8116ea13e1cdc50fa70243db52c84f9f5c502e13548c);
+    background-size: cover;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
+    background-color: #000000a0;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-left: 100px;
+    height: auto;
+    background-attachment: fixed;
+}
+
+.selection{
+    width: 50%;
+}
+
+img{
+    width: 30px;
+}
+
+input{
+    display: block;
+    margin-bottom: 3%;
+    text-align: center;
+    height: 45px;
+    width: 40%;
+    border: 0;
+    border-radius: 3px;
+    display: block;
+    background-color: #efe2ce;
+    font-size: 1rem;
+    color: #243C15;
+}
+
+#submit{
+    width: 40px;
+    height: 40px;
+    background-color: #efe2ce;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+
+.conteiner{
+    width: 50%;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.start{
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E8D4B5;
+    width: 50%;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+ul{
+    width: 100%;
+}
+
+.sub{
+    border-width: 2px 0px 2px 0px;
+    border-style: solid;
+    width: 100%;
+}
+
+.print{
+    text-align: center;
+    width: 100%;
+    margin: 10px auto 5px auto;
+}
+
+.image_print{
+    width: 20px;
+}
+
+
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    header img{
+        width: 65px;
+    }
+
+    main{
+        width: 100%;
+        background-image: url(https://img.freepik.com/fotos-premium/retrato-vertical-de-corpo-inteiro-de-pai-e-filho-afro-americanos-usando-mascaras-enquanto-faziam-compras-juntos-no-supermercado-e-usando-smartphone-verificando-a-lista-de-compras_236854-27933.jpg?w=360);
+        background-color: rgba(0, 0, 0, 0.541);
+        flex-direction: column;
+        padding: 0%;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .selection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        width: 75%;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .conteiner{
+        width: 100%;
+    }
+
+    .start{
+        width: 75%;
+    }
+
+    h2{
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    .start img{
+        width: 20px;
+    }
+}
